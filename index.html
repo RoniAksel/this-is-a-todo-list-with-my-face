@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Roni's ToDo App</title>
+</head>
+<body>
+<header>
+    <img id="roni-img" src ="./img/roni.png"> <h1>Roni's ToDo List</h1> 
+</header>
+
+<h3 id="un-head">Somthing, Somthing, Somthing</h3>
+
+<div class="all-tasks">
+    <h2 class="task-list-title">My lists</h2>
+    <ul class="task-list" data-lists></ul>
+
+    <form action="" data-new-list-form>
+      <input 
+        type="text"
+        class="new list"
+        data-new-list-input
+        placeholder="new list name"
+        aria-label="new list name"
+      />
+      <button class="btn create" aria-label="create new list">+</button>
+    </form>
+  </div>
+
+
+
+        </form>
+    </div>
+
+
+    <form>
+    <input type="text" class="todo-input" placeholder="Please Enter Item"> 
+    <button class="todo-button" type="submit">
+        <i class="fas fa-plus"></i>
+    </button>
+    <div class="select">
+        <select name="todos" class="filter-todo">
+            <option value="all">All</option>
+            <option value="completed">Completed</option>
+            <option value="uncompleted">Uncompleted</option>
+        </select>
+    </div>
+</form>
+
+
+<p id = "error-input"></p>
+<div class="todo-container">
+    <ul class="todo-list"></ul>
+</div>
+
+<div class="list-container">
+    <ul class="new-list"></ul>
+</div>
+
+    <script defer src="app.js"></script>
+</body>
+</html>
