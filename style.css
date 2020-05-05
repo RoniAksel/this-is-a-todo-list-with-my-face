@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(120deg,#ffffff, #e7e7e7);
+    color: #202020;
+    font-family: Roboto, sans-serif;
+    min-height: 100vh;
+}
+
+header{
+    font-size: 1.5rem;
+    font-family: Damion, cursive;
+    color: #264653;
+}
+
+header,
+form{
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.flex-container {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border: solid 1px #e3e3e3;
+    align-items: stretch;
+  }
+  
+  .flex-container>div {
+    background-color: none;
+    width: max-content;
+    height: max-content;
+    margin: 10px;
+    
+  }
+
+
+#un-head{
+    font-size: 0.75rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: #2a9d8f;
+}
+
+#roni-img{
+    height: 7rem;
+    padding: 1rem;
+    position: relative;
+}
+
+form input, 
+form button{
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    background: white;
+}
+
+form button{
+    color: #264653;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover{
+    background: #264653;
+    color: white;
+
+}
+
+#new-list{
+    background: none;
+    border:0;
+    border-bottom: 1px solid #264653;
+}
+
+.new-list-input{
+    background: none;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #264653;
+    transition: all 0.2s ease;
+
+}
+
+.new-list-input:focus{
+    border-bottom: 3px solid #264653;
+}
+
+.new-list-button {
+    background: none;
+}
+
+
+.list-title{
+    font-size: 1rem;
+    
+}
+
+.todo-container{
+    width: max-content;
+    height: max-content;
+    border: 1px solid #e3e3e3;
+    border-radius: 10px;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.todo-container ul{
+    flex: 1;
+}
+
+
+.todo-list{
+    min-width: 30%;
+    list-style: none;
+}
+
+.task label {
+    display: flex-inline;
+    align-items: center;
+    position: relative;
+  }
+  
+  .task {
+    position: relative;
+    margin-bottom: 1.25em;
+  }
+  
+  .task::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -0.5em;
+    height: 1px;
+    background: none;
+    opacity: 0.1;
+  }
+
+.trash-btn, 
+.complete-btn{
+    background-color: white;
+    border-radius: 25px;
+    color: #e63946;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+.complete-btn{
+    color: #02c39a;
+}
+
+.complete-btn:hover{
+    background-color: #02c39a;
+    color: white;
+}
+
+.trash-btn:hover{
+    background-color: #e63946;
+    color: white;
+}
+
+.todo-item{
+    padding: 0rem 0.5rem;
+}
+
+.list-item{
+    padding: 0rem 0.5rem;
+}
+
+.fa-trash, .fa-check{
+  pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall{
+    transform: translateY(5rem);
+    opacity: 0;
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearanceselect: none;
+    outline: none;
+    border: none;
+}
+
+.select{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+select{
+    color: #264653;
+    width: 10rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.select::after{
+    content: "\25BC";
+    position: absolute;
+    background: white;
+    color: #264653;
+    top: 0;
+    right: 0;
+    padding: 0.5rem;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+.select:hover::after{
+    background: #264653;
+    color: white;
+}
+
+#error-input{
+    font-size: 0.75rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: #2a9d8f;
+}
+
+.all-tasks{
+    border: 5px solid #d7d7d7;
+    background-color: #f3f3f3;
+    padding: 50px;
+    margin: 20px;
+    height: fit-content;
+    width: max-content;
+    position: static;
+    left: 300px;    
+}
+
+.active-list {
+  font-weight: 700;
+}
+
+.list-name {
+    cursor: pointer;
+  }
+  
+.list-name:hover {
+    opacity: 0.7;
+  }
+
+.active-list {
+    font-weight: 700;
+  }
+
+  .task-list {
+    font-size: 1rem;
+    line-height: 1.7;
+    list-style: circle;
+    padding-left: 1.1em;
+  }
+
+  .delete-stuff {
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -35px;
+  color: var(--clr-light);
+}
+
+
